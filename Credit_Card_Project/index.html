@@ -1,0 +1,46 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <title>Credit payment</title>
+    </head>
+        <body>
+            <div class="card-container">
+                <header>
+                    <h1>Pay with credit card</h1>
+                    <h2>Please enter credit card <span id="title-cc-number" class="active">number</span>,
+                    <span id="title-cc-expiration-date">expiration date</span> and <span id="title-cc-cvv">security code</span>
+                    </h2>
+                </header>
+                <main>
+                    <form action="card-form" id="card-form" method="POST">
+                        <div id="input-fields-container">
+                            <div id="cc-number-container" class="cc-generic">
+                                <label for="cc-number">Card number *</label>
+                                <input type="text" id="cc-number" class="cc-input" />
+                            </div>
+                            <div id="cc-expiration-date-container">
+                                <label for="cc-expiration-date">Expiration date</label>
+                                <input type="text" id="cc-expiration-date" class="cc-input" />
+                            </div>
+                            <div id="cc-ccv-container">
+                                <label for="cc-cvv">CVV</label>
+                                <input type="text" id="cc-cvv" class="cc-input" />
+                            </div>
+                        </div>
+                        <a href="#" id="submit-payment" class="disabled">Make payment</a>
+                    </form>
+                </main>
+                <footer>
+                    <p><em>*We only accept visa, MasterCard.</em></p>
+                </footer>
+            </div>
+
+        </body>
+</html>
+
+    <script src="jquery-latest.js"></script>
+    <script src="jquery.inputmask.bundle.min.js"></script>
+    <script src="script.js"></script>
