@@ -1,0 +1,104 @@
+body{
+    background:url(pex.jpeg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#pic{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+#pic img{
+    border-radius: 50%;
+}
+#pic h3{
+    color: rgb(41, 12, 12);
+    margin-top: 4%;
+    margin-left: -4%;
+}
+#profile{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+#profile h2{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0);
+    font-size: 30px;
+}
+#profile p{
+    margin: 0;
+}
+#profile a{
+    background: crimson;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 40%;
+}
+a:hover{
+    transform: scale(1.1);
+    color: #f1f1f1;
+}
+span::before{
+    content: 'JavaScript';
+    animation: animate infinite 8s;
+}
+@keyframes animate{
+    0%{
+        content: 'Laravel';
+    }
+    20%{
+        content: 'React Js';
+    }
+    40%{
+        content: 'JavaScript';
+    }
+    60%{
+        content: 'PHP';
+    }
+    80%{
+        content: 'HTML';
+    }
+    100%{
+        content: 'CSS';
+    }
+}
+.social{
+    padding: 3%;
+    box-sizing: border-box;
+    position: static;
+    float: right;
+    margin-top: -10%;
+ 
+}
+.btn{
+    display: inline-block;
+    margin: 10px;
+    border-radius: 60%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #3498db;
+    overflow: hidden;
+}
+.btn:hover{
+    transform: scale(1.1);
+    color: #f1f1f1;
+}
+p{
+    color: grey;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+}

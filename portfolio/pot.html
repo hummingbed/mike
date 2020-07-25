@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="folio.css">
+</head>
+<body>
+    <div id="pic">
+        <img src="men.png" height="100" width="100" alt="men">
+    </div>
+    <div id="profile">
+        <h2>Software Developer: I code in <span></span></h2>
+          <div id="heading">
+               <a href="#" onclick="mike()">About Me</a>
+          </div>
+    </div>
+    <div class="social">
+        <i class="btn">
+             <a href="#"><img src="ln.png" height="40" width="40"></a>
+         </i>
+        <i class="btn">
+            <a href="#"><img src="twitter.png" height="40" width="40"></a>
+        </i> 
+        <i class="btn"> 
+            <a href="#"> <img src="git.png" height="40" width="40"></a>
+         </i>
+ </div>
+</body>
+</html>
+
+
+<script>
+    function mike() {
+        var heading = document.getElementById('heading');
+        heading.innerHTML = '<p>you Solution focused and self-motivated software developer.  on SQL server, creation of database, tables on SQL server. Familia with database designs and development. Ability to develop data structure and algorithm. Quick to learn and master new IT trends and technologies. Skilled at team collaboration</p><a href="#">About me</a>';
+    }
+</script>
