@@ -1,0 +1,20 @@
+
+
+CREATE TABLE `students` (
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `student_no` varchar(100) NOT NULL,
+  `first_name` varchar(200) DEFAULT NULL,
+  `last_name` varchar(100) DEFAULT NULL,
+  `class` varchar(100) DEFAULT NULL,
+  `class_teacher_no` varchar(100) DEFAULT NULL,
+  `class_teacher_name` varchar(100) DEFAULT NULL
+)
+
+CREATE TABLE `teacher` (
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `staff_no` varchar(100) NOT NULL,
+  `first_name` varchar(200) DEFAULT NULL,
+  `last_name` varchar(100) DEFAULT NULL,
+  `levels` varchar(100) DEFAULT NULL,
+  `class_held` varchar(100) DEFAULT NULL
+) 
